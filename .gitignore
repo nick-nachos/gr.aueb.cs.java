@@ -2,9 +2,9 @@
 .metadata/
 
 #Eclipse project ignore list
-bin/
-.settings/
-.classpath
-.project
+**/bin/
+**/.settings/
+**/.classpath
+**/.project
 
 
