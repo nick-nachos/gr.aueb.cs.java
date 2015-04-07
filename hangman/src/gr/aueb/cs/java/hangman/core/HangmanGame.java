@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 
-public final class HangmanController
+public final class HangmanGame
 {
     private String word;
     private HashMap<Character, CharacterResolver> charMap;
@@ -16,7 +16,7 @@ public final class HangmanController
     private HangmanState state;
     private char[] wordProgress;
 
-    public HangmanController(String word)
+    public HangmanGame(String word)
     {
         if (StringUtil.isNullOrWhitespace(word))
             throw new IllegalArgumentException("Blank strings are invalid for hangman game.");

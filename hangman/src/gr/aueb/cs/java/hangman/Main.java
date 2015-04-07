@@ -14,7 +14,7 @@ public class Main
     public static void main(String[] args)
         throws IOException
     {
-        HangmanController gameController = new HangmanController(WordPool.instance.getRandomWord());
+        HangmanGame gameController = new HangmanGame(WordPool.instance.getRandomWord());
         HangmanVisualizer.instance.visualize(gameController);
         
         while (!gameController.isGameFinished())

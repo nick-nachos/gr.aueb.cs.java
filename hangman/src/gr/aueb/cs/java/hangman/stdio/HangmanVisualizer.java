@@ -1,6 +1,6 @@
 package gr.aueb.cs.java.hangman.stdio;
 
-import gr.aueb.cs.java.hangman.core.HangmanController;
+import gr.aueb.cs.java.hangman.core.HangmanGame;
 import gr.aueb.cs.java.hangman.core.HangmanState;
 import gr.aueb.cs.java.hangman.util.StringUtil;
 
@@ -15,7 +15,7 @@ public final class HangmanVisualizer
     
     private HangmanVisualizer() { }
     
-    public void visualize(HangmanController controller)
+    public void visualize(HangmanGame controller)
     {
         this.printHangman(controller.getHangState());
         this.printWord(controller.getWordProgress());
