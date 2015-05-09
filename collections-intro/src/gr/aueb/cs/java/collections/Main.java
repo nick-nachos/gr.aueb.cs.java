@@ -10,7 +10,9 @@ public final class Main {
 	
 	public static void main(String[] args) {
 		Demo[] demos = new Demo[] {
-			new AddRandomItemsDemo()
+			new AddRandomItemsDemo(),
+			new RemoveItemDemo(),
+			new RemoveItemByCriteriaDemo()
 		};
 		
 		printDemoList(demos);
@@ -24,7 +26,7 @@ public final class Main {
 				demo.run();
 			}
 			catch (Exception ex) {
-				ex.printStackTrace();
+				ex.printStackTrace(System.out);
 			}
 			
 			printSeparator();
