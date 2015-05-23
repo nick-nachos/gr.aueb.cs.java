@@ -12,7 +12,8 @@ public final class Main {
 		Demo[] demos = new Demo[] {
 			new AddRandomItemsDemo(),
 			new RemoveItemDemo(),
-			new RemoveItemByCriteriaDemo()
+			new RemoveItemByCriteriaDemo(),
+			new RemoveItemByCriteria2Demo()
 		};
 		
 		printDemoList(demos);
